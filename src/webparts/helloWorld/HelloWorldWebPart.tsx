@@ -6,14 +6,13 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 
-import { IPropertyFieldGroupOrPerson, IPropertyFieldSite, PropertyFieldSitePicker } from '@pnp/spfx-property-controls';
+import { IPropertyFieldSite, IPropertyFieldSitePickerProps, PropertyFieldSitePicker } from '@pnp/spfx-property-controls/lib/PropertyFieldSitePicker';
 import * as strings from 'HelloWorldWebPartStrings';
 import { HelloWorld } from './components/HelloWorld';
 
 
 
 export interface IHelloWorldWebPartProps {
-  people: IPropertyFieldGroupOrPerson[] | undefined;
   sites: IPropertyFieldSite[] | undefined;
 }
 
@@ -49,7 +48,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
                 PropertyFieldSitePicker('sites', {
                   label: 'Select sites',
                   initialSites: this.properties.sites ?? [],
-                  context: this.context,
+                  context: this.context as unknown as IPropertyFieldSitePickerProps['context'],
                   deferredValidationTime: 500,
                   multiSelect: true,
                   onPropertyChange: this.onPropertyPaneFieldChanged,
