@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pnpcontrolsmix-client-side-solution",
+    "id": "b750f8a4-9c97-4ff4-afd1-bf3fcdcc85b5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "pnpcontrolsmix description"
+      },
+      "longDescription": {
+        "default": "pnpcontrolsmix description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "pnpcontrolsmix Feature",
+        "description": "The feature that activates elements of the pnpcontrolsmix solution.",
+        "id": "c04f450c-72c9-41f2-8f9f-c176638f98f3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/pnpcontrolsmix.sppkg"
+  }
+}

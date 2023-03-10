@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.19.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "pnpcontrolsmix",
+    "libraryId": "b750f8a4-9c97-4ff4-afd1-bf3fcdcc85b5",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "pnpcontrolsmix",
+    "solutionShortDescription": "pnpcontrolsmix description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
